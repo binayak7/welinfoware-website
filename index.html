@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wel Infoware Nepal Pvt. Ltd.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+    <header>
+        <div class="container flex">
+            <!-- Precise Brand Logo Integration -->
+            <a href="#" class="logo flex-logo">
+                <img src="logo.png" alt="Wel Infoware Nepal Logo" class="nav-logo-img">
+            </a>
+            <nav><a href="#about">About</a><a href="#services">Services</a><a href="#contact" class="btn">Contact</a></nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container grid-2-hero">
+            <div class="hero-text">
+                <h1>Custom Enterprise IT Solutions</h1>
+                <p>Engineered hardware and custom software systems built natively for corporate and enterprise ecosystems across Nepal.</p>
+                <a href="#contact" class="btn btn-red">Get Consultation</a>
+            </div>
+            <!-- Central Hero Graphic Asset -->
+            <div class="hero-graphic text-center">
+                <img src="logo.png" alt="Wel Infoware Nepal" class="hero-logo-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container grid-2">
+        <div>
+            <h2>About Our Company</h2>
+            <p>Wel Infoware Nepal Private Limited provides specialized management information frameworks, IT consultation, and secure cloud networking infrastructures built to handle modern corporate scaling.</p>
+        </div>
+        <div class="grid-2 text-center">
+            <div class="stat"><h3>24/7</h3><p>SLA Support</p></div>
+            <div class="stat"><h3>100%</h3><p>Local Compliance</p></div>
+        </div>
+    </section>
+
+    <section id="services" class="bg-light">
+        <div class="container">
+            <h2 class="text-center">Our Services & Expertise</h2>
+            <div class="grid-3">
+                <div class="card"><i class="fa-solid fa-code"></i><h3>Custom Software</h3><p>Bespoke software builds tailored precisely to map your company workflows.</p></div>
+                <div class="card"><i class="fa-solid fa-network-wired"></i><h3>Enterprise Networks</h3><p>Secure, physical network integrations, infrastructure setup, and systems integration.</p></div>
+                <div class="card"><i class="fa-solid fa-cloud-shield"></i><h3>IT Advisory & Security</h3><p>End-to-end security updates, cloud configurations, and dedicated technical maintenance.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container grid-2">
+        <div>
+            <h2>Contact Coordinates</h2>
+            <p><i class="fa-solid fa-location-dot"></i> Harion-8, Sarlahi / Kathmandu, Nepal</p>
+            <p><i class="fa-solid fa-envelope"></i> info@welinfowarenepal.com.np</p>
+        </div>
+        <form id="contactForm">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Corporate Email" required>
+            <textarea placeholder="Project Requirements" rows="4" required></textarea>
+            <button type="submit" class="btn btn-red">Submit Request</button>
+        </form>
+    </section>
+
+    <footer><p class="text-center">&copy; 2026 Wel Infoware Nepal Private Limited. All Rights Reserved.</p></footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Request submitted successfully to Wel Infoware Nepal.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
